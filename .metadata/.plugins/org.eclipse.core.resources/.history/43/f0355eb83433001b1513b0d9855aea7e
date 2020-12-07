@@ -1,0 +1,29 @@
+package variaveis;
+
+import javax.swing.JOptionPane;
+
+public class Media {
+
+	public static void main(String[] args) {
+		
+		
+
+		String nome = JOptionPane.showInputDialog("Digite o nome da disciplina");
+		double notaPrimeiro = Double.parseDouble(JOptionPane.showInputDialog("Entre com o nota do primeiro semestre: "));
+		double notaSegundo = Double.parseDouble(JOptionPane.showInputDialog("Entre com o nota do segundo semestre: "));
+		
+		System.out.println("Nome: "+ nome);
+		System.out.println("Nota primeiro semestre: "+notaPrimeiro);
+		System.out.println("Nota segundo semestre: " +notaSegundo);
+		System.out.println("Media: "+(notaPrimeiro/notaSegundo)/2);
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

@@ -1,0 +1,14 @@
+package br.com.lojaabc.implementacao;
+
+import br.com.lojaabc.modelo.Venda;
+
+public class ImplementarVenda {
+
+	public static void main(String[] args) {
+		
+		Venda venda = new Venda();
+		
+
+	}
+
+}

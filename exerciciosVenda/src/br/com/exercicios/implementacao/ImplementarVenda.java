@@ -1,0 +1,33 @@
+package br.com.exercicios.implementacao;
+
+import br.com.execicioVenda.utils.Magic;
+import br.com.exercicios.Cliente;
+import br.com.exercicios.Fabricante;
+import br.com.exercicios.Produto;
+import br.com.exercicios.Venda;
+
+public class ImplementarVenda {
+
+	public static void main(String[] args) {
+		Venda venda = new Venda(
+				Magic.i("NF"), 
+				new Produto(
+						Magic.i("Código"),
+						Magic.s("Descricao"),
+						Magic.f("Valor de compra"),
+						Magic.f("Valor de venda"),
+						Magic.i("QTDE"),
+						new Fabricante(
+								Magic.s("CNPJ"),
+								Magic.s("Razao social"),
+								Magic.s("Fone")
+								)
+						), 
+				new Cliente(Magic.i("Código"), Magic.s("nome"), Magic.s("email"), Magic.b("Especial?")), 
+				Magic.i("Qtde"), 
+				Magic.f("Total"));
+		
+		System.out.println(venda);
+	}
+
+}

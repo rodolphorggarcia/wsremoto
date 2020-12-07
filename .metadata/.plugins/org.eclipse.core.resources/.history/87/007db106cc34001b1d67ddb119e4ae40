@@ -1,0 +1,35 @@
+package br.com.concessionariarubinho.testes;
+
+import javax.swing.JOptionPane;
+
+import br.com.concessionariarubinho.modelo.CarroFormula1;
+
+public class TesteCarro {
+
+	public static void main(String[] args) {
+		
+		CarroFormula1 objeto = new CarroFormula1();
+		
+		objeto.preencherEscuderia(JOptionPane.showInputDialog("Escuderia"));
+		objeto.preencherCor(JOptionPane.showInputDialog("Cor"));
+		objeto.preencherValor(Float.parseFloat(JOptionPane.showInputDialog("Valor")));
+		
+		
+		
+		//System.out.println(objeto); endereco do objeto
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

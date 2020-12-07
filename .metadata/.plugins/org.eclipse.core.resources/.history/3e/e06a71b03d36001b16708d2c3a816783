@@ -1,0 +1,34 @@
+package br.com.exercicios;
+
+public class PessoaJuridica extends Cliente{ // entra tudo que é publico da classe clientes menos os construtures
+	
+	private String cnpj;
+	private String contato;
+	
+	
+	public PessoaJuridica() {
+		super();
+	}
+
+	public PessoaJuridica(int id, String nome, String email, boolean especial, String cnpj, String contato) {
+		super(id, nome, email, especial);
+		this.cnpj = cnpj;
+		this.contato = contato;
+	}
+	
+	public String getCnpj() {
+		return cnpj;
+	}
+	public void setCnpj(String cnpj) {
+		this.cnpj = cnpj;
+	}
+	public String getContato() {
+		return contato;
+	}
+	public void setContato(String contato) {
+		this.contato = contato;
+	}
+	
+	
+
+}

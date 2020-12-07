@@ -1,0 +1,86 @@
+package br.com.exercicios;
+
+public class Cliente {
+	private int id;
+	private String nome;
+	private String email;
+	private boolean especial;
+	
+	public Cliente() {
+		
+	}
+
+	@Override
+	public String toString() {
+		return "Cliente [id=" + id + ", nome=" + nome + ", email=" + email + ", especial=" + especial + "]";
+	}
+
+	public Cliente(int id, String nome, String email, boolean especial) {
+		super();
+		this.id = id;
+		this.nome = nome;
+		this.email = email;
+		this.especial = especial;
+	}
+	
+	public String getChamado() {
+		return null;
+	}
+	
+
+	public void setall(int id, String nome, String email, boolean especial) {
+		
+		this.id = id;
+		this.nome = nome;
+		this.email = email;
+		this.especial = especial;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public boolean isEspecial() {
+		return especial;
+	}
+
+	public void setEspecial(boolean especial) {
+		this.especial = especial;
+	}
+	
+	public String getUsuario() {
+		if (this.email.contains("@")==true) {
+			return this.email.substring(0, this.email.indexOf("@"));
+		}
+		return this.email;
+	}
+	
+	public String getPrimeiroNome() {
+		if (this.email.contains(" ")) {
+			return this.nome.substring(0, this.nome.indexOf(" "));
+		}
+		return this.nome;
+	}
+	
+
+}

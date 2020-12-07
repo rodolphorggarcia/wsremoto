@@ -1,0 +1,35 @@
+package br.com.bankofoz.implementacao;
+
+import br.com.bankofoz.beans.Conta;
+import br.com.bankofoz.beans.Corrente;
+import br.com.bankofoz.beans.Poupanca;
+import br.com.execicioVenda.utils.Magic;
+
+
+public class ImplementarTestes {
+
+	public static void main(String[] args) {
+		
+		
+		char opcao = Magic.s("Digite P para poupança").charAt(0);
+		Conta conta =null;
+		
+		if(opcao=='P') {
+			conta = new Poupanca();
+			System.out.println(conta.getSaldo());
+			conta.depositar(100);
+			System.out.println(conta.getSaldo());
+			conta.setRendimento(20);
+			System.out.println(conta.getRendimento());
+			conta.setSaldo(conta.getSaldo() + conta.getRendimento());
+			System.out.println(conta.getSaldo());
+		}
+		else {
+			conta = new Corrente();
+			System.out.println(conta.getSaldo());
+			conta.se
+		}
+
+	}
+
+}

@@ -1,0 +1,26 @@
+package decisao;
+
+import javax.swing.JOptionPane;
+
+public class Exercicios {
+
+	public static void main(String[] args) {
+		String cliente = JOptionPane.showInputDialog("Nome do Cliente").toUpperCase();
+		float numeroDiarias = Float.parseFloat(JOptionPane.showInputDialog("Numero de diarias"));
+		
+		if (numeroDiarias > 15){
+			System.out.println(cliente + ", o valor a pagar: " + ((numeroDiarias *5.5)+ (80 *numeroDiarias)) + " reais");
+		}
+		
+		else if(numeroDiarias == 15){
+			System.out.println(cliente + ", o valor a pagar: " + ((numeroDiarias *6)+ (80 *numeroDiarias)) + " reais");
+		}
+		
+		else {
+			System.out.println(cliente + ", o valor a pagar: " + ((numeroDiarias *8)+ (80 *numeroDiarias)) + " reais");
+		}
+		
+
+	}
+
+}

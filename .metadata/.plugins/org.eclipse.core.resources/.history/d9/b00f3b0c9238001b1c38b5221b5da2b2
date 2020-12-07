@@ -1,0 +1,17 @@
+package br.com.excecoes.implementacao;
+
+public class testeExcecao {
+
+	public static void main(String[] args) {
+		
+		try {
+			int numero = Integer.parseInt("7");
+			System.out.println("Numero: " + numero);
+		}
+		catch (Exception e) {
+			System.out.println(e);
+		}
+
+	}
+
+}

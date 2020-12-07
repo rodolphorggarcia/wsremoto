@@ -1,0 +1,25 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class Slide77Exercicio4 {
+
+	public static void main(String[] args) {
+		String nome = "";
+		int idade = 0;
+		do {
+			nome = JOptionPane.showInputDialog("Entre com o nome").toUpperCase();
+			idade = Integer.parseInt(JOptionPane.showInputDialog("Entre com a idade"));
+			
+		System.out.println(nome + " / " + idade);
+		}while(JOptionPane.showConfirmDialog(
+				null, 
+				"Deseja continuar", 
+				"Pergunta",
+				JOptionPane.YES_NO_OPTION)==0);
+		
+	
+
+	}
+
+}

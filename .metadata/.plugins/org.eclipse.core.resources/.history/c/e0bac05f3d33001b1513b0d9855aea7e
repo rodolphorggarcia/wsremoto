@@ -1,0 +1,36 @@
+package variaveis;
+
+import javax.swing.JOptionPane;
+
+public class Produtos {
+
+	public static void main(String[] args) {
+	
+		String produto = JOptionPane.showInputDialog("Produto");
+		/*
+		 * Entre os tipos primitivos inteiros
+		 * byte=>
+		 * short=> -32... / +32....
+		 * int=>
+		 * long=> 
+		 * */
+		
+		short qtde = Short.parseShort(JOptionPane.showInputDialog("Qtde:"));
+				
+		/*
+		 * Entre tipos primitivos reais
+		 * floar => pouca precisao nas casas decimais
+		 * double=> dobro de precisao do float
+		 * */
+
+				
+		float valor = Float.parseFloat(JOptionPane.showInputDialog("Valor: "));
+		//Cast e um converao entre dados do mesmo tipo, MAs com tamanhos diferentes
+		
+		int numero = 10;
+		qtde = (short) numero;
+		
+		
+	}
+
+}

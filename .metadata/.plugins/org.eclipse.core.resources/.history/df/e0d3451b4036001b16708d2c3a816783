@@ -1,0 +1,11 @@
+package br.com.exercicios;
+
+public class PessoaFisica extends Cliente {
+	
+	private String cpf;
+	private String contato;
+
+	
+	
+	
+}

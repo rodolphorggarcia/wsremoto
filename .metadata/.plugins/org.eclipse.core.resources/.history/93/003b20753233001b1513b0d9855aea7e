@@ -1,0 +1,27 @@
+package variaveis;
+
+import javax.swing.JOptionPane;
+
+public class TiposDados {
+
+	public static void main(String[] args) {
+		
+		
+		String nome = JOptionPane.showInputDialog("Digite seu nome");
+		int idade = JOptionPane.showConfirmDialog(null, "Digite sua idade: ");
+		double altura = 1.81;
+		double peso = 96.0;
+		
+		System.out.println("Nome: "+ nome);
+		System.out.println("Idade: "+idade);
+		System.out.println("Altura: "+altura);
+		System.out.println("Peso: "+peso);
+		
+		double imc = peso / (altura*altura);
+		System.out.println("IMC: "+ Math.round(imc));
+		
+	
+
+	}
+
+}

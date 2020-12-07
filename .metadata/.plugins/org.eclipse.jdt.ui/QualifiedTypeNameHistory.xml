@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+    <fullyQualifiedTypeName name="br.com.bankofoz.beans.Corrente"/>
+    <fullyQualifiedTypeName name="br.com.bankofoz.beans.Cliente"/>
+    <fullyQualifiedTypeName name="br.com.bankofoz.beans.Poupanca"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+</qualifiedTypeNameHistroy>

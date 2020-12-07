@@ -1,0 +1,23 @@
+package br.com.universidadexyz.implementacao;
+
+import br.com.universidadexyz.beans.Aluno;
+
+public class ImplementarAluno2 {
+
+	public static void main(String[] args) {
+		Aluno obj_aluno = new Aluno();
+		obj_aluno.setAll(987303007, "Rodolpho Garcia", "096.961.536.19");
+		obj_aluno.getAll();
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

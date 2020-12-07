@@ -1,0 +1,36 @@
+package variaveis;
+
+public class TiposDados {
+
+	public static void main(String[] args) {
+		
+		
+		String nome = "Rodolpho";
+		int idade = 29;
+		double altura = 1.81;
+		
+		System.out.println(nome + "," + idade +" anos, "+ "Tem a altura: "+ altura);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		/*
+		 *  boolean VouF = true;
+		   byte a;
+		   char letra = 'F';
+		   int valor = 4500;
+		   double x = 3.14;
+		   a = 20;
+	   */
+		
+		
+
+	}
+
+}

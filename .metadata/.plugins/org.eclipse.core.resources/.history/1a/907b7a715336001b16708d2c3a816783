@@ -1,0 +1,48 @@
+package br.com.exercicios.implementacao;
+
+import br.com.execicioVenda.utils.Magic;
+import br.com.exercicios.Cliente;
+import br.com.exercicios.PessoaFisica;
+import br.com.exercicios.PessoaJuridica;
+
+public class ImplementarCliente2 {
+
+	public static void main(String[] args) {
+		char opcao = Magic.s("Digite F para pessoa física").charAt(0);
+		Cliente cliente =null;
+		if(opcao=='F') {
+			cliente = new PessoaFisica(
+					Magic.i("ID"),
+					Magic.s("Nome"),
+					Magic.s("Email"),
+					Magic.b("Especial ??"),
+					Magic.s("CPF"),
+					Magic.s("RG"),
+					Magic.s("Nascimento"));
+			
+		}
+		else {
+			cliente = new PessoaJuridica(
+					Magic.i("ID"),
+					Magic.s("Nome"),
+					Magic.s("Email"),
+					Magic.b("Especial ??"),
+					Magic.s("CNPJ"),
+					Magic.s("Contato"));
+		}
+
+		System.out.println(cliente.toString());
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

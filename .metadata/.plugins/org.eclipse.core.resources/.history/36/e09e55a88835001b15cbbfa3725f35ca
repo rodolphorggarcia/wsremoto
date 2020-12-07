@@ -1,0 +1,13 @@
+package br.com.universidadexyz.beans;
+
+public class Professor {
+	
+	private int id;
+	private String apelido;
+	private String formacao;
+	private float valorHora;
+	
+	
+	
+
+}

@@ -1,0 +1,29 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class DesafioDo {
+
+	public static void main(String[] args) {
+	
+		
+		int jogador1 = Integer.parseInt(JOptionPane.showInputDialog("Digite o primeiro numero"));
+		int jogador2 = 0;
+		
+		do {
+			jogador2 = Integer.parseInt(JOptionPane.showInputDialog("Digite o primeiro numero"));
+			
+		}while(jogador1==jogador2);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}
